@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Nav,
   NavBtn,
@@ -6,19 +6,27 @@ import {
   NavLink,
   NavMenu,
   Bars,
+  Close,
 } from "./NavbarElements";
 
 import Logo from "../../assets/images/laptop.png";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <img src={Logo} alt="Logo" />
+          <img style={{ height: "75px" }} src={Logo} alt="Logo" />
         </NavLink>
-        <Bars />
-        <NavMenu>
+        {open ? (
+          <Close onClick={() => setOpen(!open)} />
+        ) : (
+          <Bars onClick={() => setOpen(!open)} />
+        )}
+
+        <NavMenu open={open}>
           <NavLink to="/About" activeStyle>
             {" "}
             Nosotros{" "}
