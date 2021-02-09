@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "./HomeElements";
 import Nosotros from "../Nosotros/Nosotros";
+import Servicios from "../Servicios/Servicios";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <p>Mas de 20 años de experiencia</p>
       </Container>
       <Nosotros />
+      <Servicios />
     </>
   );
 };

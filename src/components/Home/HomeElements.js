@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   heigth: 100%;
-  pading: 5px;
+  padding: 35px;
   border-bottom: 1px solid black;
 
   h1 {
@@ -22,7 +22,7 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     heigth: 100%;
-    pading: 5px;
+    padding: 10px;
     border-bottom: 1px solid black;
 
     h1 {
