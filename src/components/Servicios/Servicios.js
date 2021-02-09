@@ -10,12 +10,12 @@ import {
 const Servicios = () => {
   return (
     <Container>
-      <h1>Nuestros Servicios</h1>
+      <h1>Nuestros Servicios:</h1>
       <CardConteiner>
         <Card>
           <CardIcon>
             <img
-              src="https://image.flaticon.com/icons/png/512/1018/1018259.png"
+              src="https://cdn.pixabay.com/photo/2013/07/12/14/53/cart-148964_960_720.png"
               alt="prueba"
             />
           </CardIcon>
@@ -30,7 +30,7 @@ const Servicios = () => {
         <Card>
           <CardIcon>
             <img
-              src="https://image.flaticon.com/icons/png/512/1018/1018259.png"
+              src="https://cdn.pixabay.com/photo/2013/07/12/12/01/screwdriver-145111_960_720.png"
               alt="prueba"
             />
           </CardIcon>
@@ -47,7 +47,7 @@ const Servicios = () => {
         <Card>
           <CardIcon>
             <img
-              src="https://image.flaticon.com/icons/png/512/1018/1018259.png"
+              src="https://cdn.pixabay.com/photo/2014/04/03/11/54/laptop-312499_960_720.png"
               alt="prueba"
             />
           </CardIcon>

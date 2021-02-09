@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 100%;
   heigth: 100%;
   padding: 25px;
-  background-color: black;
+  background-color: #294866;
 
   h1 {
     font-size: 60px;
@@ -25,7 +25,7 @@ export const Container = styled.div`
     width: 100%;
     heigth: 100%;
     padding: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid 96ac96;
 
     h1 {
       font-size: 6vh;

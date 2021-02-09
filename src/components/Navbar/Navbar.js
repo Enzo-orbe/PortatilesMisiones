@@ -9,7 +9,7 @@ import {
   Close,
 } from "./NavbarElements";
 
-import Logo from "../../assets/images/laptop.png";
+import Logo from "../../assets/images/ordenador-portatil.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,7 +18,18 @@ export default function Navbar() {
     <>
       <Nav>
         <NavLink to="/">
-          <img style={{ height: "75px" }} src={Logo} alt="Logo" />
+          <p
+            style={{
+              fontSize: "50px",
+              marginTop: "15px",
+              color: "white",
+              fontWeight: "bold",
+            }}
+            src={Logo}
+            alt="Logo"
+          >
+            PM
+          </p>
         </NavLink>
         {open ? (
           <Close onClick={() => setOpen(!open)} />

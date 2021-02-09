@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   width: 100%;
   heigth: 100%;
+  padding: 25px;
+  background-color: #597088;
 
   h1 {
-    margin-bottom: 25px;
+    font-size: 60px;
+    color: #fff;
+    padding: 15px;
   }
 `;
 
@@ -38,7 +40,8 @@ export const Card = styled.div`
   margin-top: 15px;
   width: 300px;
   heigth: auto;
-  border: 1px solid white;
+  background-color: #294866;
+  border: 1px solid 96ac96;
   border-radius: 8px;
   box-shadow: -3px 1px 16px 0px rgba(0, 0, 0, 0.31);
   -webkit-box-shadow: -3px 1px 16px 0px rgba(0, 0, 0, 0.31);
@@ -54,8 +57,7 @@ export const CardIcon = styled.div`
 
   img {
     width: 200px;
-    heigth: 50px;
-    border-radius: 50%;
+    heigth: 200px;
   }
 `;
 
@@ -67,13 +69,14 @@ export const CardText = styled.div`
   margin: 10px;
   width: 100%;
   height: 180px;
+  color: #ffff;
 
   h3 {
     margin: 0 auto;
   }
 
-  ul {
+  ul li {
     justify-content: flex-start;
-    margin: 15px;
+    margin: 10px;
   }
 `;
