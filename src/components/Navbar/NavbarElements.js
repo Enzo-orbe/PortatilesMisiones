@@ -4,7 +4,7 @@ import { FaBars, FaRegWindowClose } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: #294866;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -32,7 +32,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-  z-index: 20;
+  z-index: 30;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -48,7 +48,7 @@ export const Bars = styled(FaBars)`
 export const Close = styled(FaRegWindowClose)`
   display: none
   color: #fff;
-  z-index: 20;
+  z-index: 30;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -69,14 +69,16 @@ export const NavMenu = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #123456;
+    background-color: #294866;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 150px;
     width: 250px;
+    margin-top: 67px;
     transition: transform 0.3s ease-in-out;
+    z-index: 20;
     li {
       color: #fff;
     }

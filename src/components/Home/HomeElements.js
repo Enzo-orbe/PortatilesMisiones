@@ -1,28 +1,40 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  heigth: 100vh;
+  position: relative;
+  height: 100vh;
   width: 100%;
-  padding: 35px;
-  border-bottom: 1px solid #6b866b;
-  background-image: url("https://i.ibb.co/zh1cgm8/Dise-o-sin-t-tulo-1.png");
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    background-image: url("https://i.ibb.co/zh1cgm8/Dise-o-sin-t-tulo-1.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+  }
 
   h1 {
-    font-size: 150px;
-    margin: 0 auto;
-    color: #ffff;
+    position: relative;
+    color: #ffffff;
+    font-size: 10rem;
+    line-height: 0.9;
+    text-align: center;
   }
 
   p {
-    margin-bottom: 25px;
-    color: #ffff;
+    position: relative;
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 0.9;
+    text-align: center;
   }
 
   @media screen and (max-width: 768px) {
