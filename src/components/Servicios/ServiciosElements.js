@@ -6,12 +6,18 @@ export const Container = styled.div`
   width: 100%;
   heigth: 100%;
   padding: 25px;
-  background-color: #597088;
+  background-color: #ffff;
 
   h1 {
     font-size: 60px;
-    color: #fff;
+    color: #597088;
     padding: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 6vh;
+    }
   }
 `;
 
@@ -40,6 +46,7 @@ export const Card = styled.div`
   margin-top: 15px;
   width: 300px;
   heigth: auto;
+  padding: 10px;
   background-color: #294866;
   border: 1px solid 96ac96;
   border-radius: 8px;

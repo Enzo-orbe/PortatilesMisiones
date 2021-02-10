@@ -2,6 +2,8 @@ import React from "react";
 import { Container } from "./HomeElements";
 import Nosotros from "../Nosotros/Nosotros";
 import Servicios from "../Servicios/Servicios";
+import Contacto from "../Contacto/Contacto";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       </Container>
       <Nosotros />
       <Servicios />
+      <Contacto />
+      <Footer />
     </>
   );
 };
