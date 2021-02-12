@@ -4,7 +4,7 @@ import { Foot } from "./FooterElements";
 function Footer() {
   return (
     <Foot>
-      <p>Portatiles Misiones - 2021</p>
+      <p>Portatiles Misiones &copy; - 2021</p>
     </Foot>
   );
 }

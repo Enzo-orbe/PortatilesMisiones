@@ -42,6 +42,10 @@ export default function Navbar() {
             {" "}
             Nosotros{" "}
           </NavLink>
+          <NavLink to="/Servicios" activeStyle>
+            {" "}
+            Servicios{" "}
+          </NavLink>
           <NavLink to="/Contact" activeStyle>
             {" "}
             Contacto{" "}

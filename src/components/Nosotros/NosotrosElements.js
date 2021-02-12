@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+  height: 70vh;
   width: 100%;
-  heigth: 100%;
-  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #294866;
 
   h1 {
     font-size: 60px;
     color: #ffff;
     padding: 15px;
+    margin-bottom: 30px;
   }
 
   p {
@@ -28,7 +30,8 @@ export const Container = styled.div`
     border-bottom: 1px solid 96ac96;
 
     h1 {
-      font-size: 6vh;
+      font-size: 4vh;
+      margin: 20px;
     }
 
     p {
@@ -47,7 +50,12 @@ export const ConText = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     heigth: auto;
+    padding: 10px;
+    margin: 10px;
   }
 `;

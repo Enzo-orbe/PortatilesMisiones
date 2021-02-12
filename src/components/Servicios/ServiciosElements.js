@@ -1,20 +1,30 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
   width: 100%;
-  heigth: 100%;
-  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #ffff;
 
   h1 {
     font-size: 60px;
     color: #597088;
     padding: 15px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+
     h1 {
       font-size: 6vh;
     }
@@ -31,9 +41,12 @@ export const CardConteiner = styled.div`
 
   @media screen and (max-width: 768px) {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     heigth: auto;
+    margin: 15px;
   }
 `;
 
@@ -53,6 +66,17 @@ export const Card = styled.div`
   box-shadow: -3px 1px 16px 0px rgba(0, 0, 0, 0.31);
   -webkit-box-shadow: -3px 1px 16px 0px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: -3px 1px 16px 0px rgba(0, 0, 0, 0.31);
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    heigth: auto;
+    padding: 20px;
+    margin-left: -20px;
+  }
 `;
 
 export const CardIcon = styled.div`
